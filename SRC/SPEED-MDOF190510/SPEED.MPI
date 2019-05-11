@@ -1,0 +1,21 @@
+!> @brief Redefinition of MPI types 
+!! @author Ilario Mazzieri
+!> @date September, 2013
+!> @version 1.0
+!*******************************************************************************************
+!    header speed.mpi
+!  
+!    REDEFINITION OF SPEED MPI TYPE
+!
+!******************************************************************************************* 
+     include 'mpif.h'
+     
+     integer*4 SPEED_COMM, SPEED_STATUS_SIZE
+     integer*4 SPEED_TAG, SPEED_TAG_MIN, SPEED_TAG_MAX
+     integer*4 SPEED_INTEGER, SPEED_REAL, SPEED_DOUBLE
+     parameter (SPEED_COMM = MPI_COMM_WORLD)
+     parameter (SPEED_STATUS_SIZE = MPI_STATUS_SIZE)
+     parameter (SPEED_TAG_MIN = 1515, SPEED_TAG_MAX = 1530)
+     parameter (SPEED_INTEGER = MPI_INTEGER)
+     parameter (SPEED_REAL = MPI_REAL)
+     parameter (SPEED_DOUBLE = MPI_DOUBLE_PRECISION)
